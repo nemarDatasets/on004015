@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004015",
-  "source": "openneuro",
-  "source_id": "ds004015",
+  "pipeline_stage": "validated",
   "title": "Attended speaker paradigm (cEEGrid data)",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Bjoern Holtze": {},
     "Marc Rosenkranz": {},
@@ -11,21 +11,64 @@
     "Stefan Debener": {},
     "Bojana Mirkovic": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004015.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.3389/fnins.2022.869426",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004015",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004015",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "v5.2",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".json",
+    ".mat",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset comprises consolidated cEEGrid electroencephalography recordings from 36 participants (15 from Jaeger et al. 2020 and 21 from Holtze et al. 2021) performing a two-competing speaker attention task. Participants attended to one of two simultaneously presented audiobooks while EEG was recorded during 10-minute blocks. The pooled dataset includes both omnidirectional (equal loudness) and beamforming (differential loudness) stimulus conditions, enabling investigation of neural correlates of selective auditory attention.",
+  "methods_description": "Participants performed a two-competing speaker paradigm with instructions to attend to either the left or right audio book. The original studies differed in stimulus presentation: Jaeger et al. (2020) presented both audiobooks at equal loudness across six 10-minute blocks, while Holtze et al. (2021) alternated between omnidirectional (equal loudness) and beamforming (attended book louder) conditions across five 10-minute blocks. cEEGrid electroencephalography was recorded throughout the task.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "selective attention"
+    },
+    {
+      "term": "auditory attention"
+    },
+    {
+      "term": "cocktail party problem"
+    },
+    {
+      "term": "competing speakers"
+    },
+    {
+      "term": "electroencephalography"
+    }
+  ],
+  "source_hash": "3b4c02b1c7f9f323ac6e1ac032950f1bd6eade6ef75c30ac6152c12ce9ac2bba"
 }
