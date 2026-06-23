@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Attended speaker paradigm (cEEGrid data)",
+  "description": "This dataset comprises consolidated cEEGrid recordings from two attended speaker paradigm studies involving 36 participants (15 from Jaeger et al. 2020 and 21 from Holtze et al. 2021). Participants performed a dichotic listening task with competing audiobooks while instructed to attend to either the left or right speaker. The pooled dataset includes recordings under omnidirectional and beamforming acoustic conditions, providing a resource for investigating neural correlates of selective auditory attention using high-density EEG.",
+  "methods_description": "Participants performed a two-competing speaker paradigm with 5-6 blocks of 10-minute audiobook presentations. In the omnidirectional condition, both audiobooks were presented at equal loudness. In the beamforming condition, the attended audiobook was presented louder than the ignored audiobook. cEEGrid recordings were acquired during these tasks.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,12 +13,29 @@
     "Stefan Debener": {},
     "Bojana Mirkovic": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004015.v1.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "selective attention"
+    },
+    {
+      "term": "Auditory Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
+    },
+    {
+      "term": "dichotic listening"
+    },
+    {
+      "term": "cocktail party problem"
+    },
+    {
+      "term": "high-density EEG"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.3389/fnins.2022.869426",
       "identifier_type": "DOI",
@@ -31,14 +50,19 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004015",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004015.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "6.5 GB (86 files)"
   ],
   "formats": [
     ".fdt",
@@ -46,29 +70,8 @@
     ".mat",
     ".md",
     ".set",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises consolidated cEEGrid electroencephalography recordings from 36 participants (15 from Jaeger et al. 2020 and 21 from Holtze et al. 2021) performing a two-competing speaker attention task. Participants attended to one of two simultaneously presented audiobooks while EEG was recorded during 10-minute blocks. The pooled dataset includes both omnidirectional (equal loudness) and beamforming (differential loudness) stimulus conditions, enabling investigation of neural correlates of selective auditory attention.",
-  "methods_description": "Participants performed a two-competing speaker paradigm with instructions to attend to either the left or right audio book. The original studies differed in stimulus presentation: Jaeger et al. (2020) presented both audiobooks at equal loudness across six 10-minute blocks, while Holtze et al. (2021) alternated between omnidirectional (equal loudness) and beamforming (attended book louder) conditions across five 10-minute blocks. cEEGrid electroencephalography was recorded throughout the task.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "selective attention"
-    },
-    {
-      "term": "auditory attention"
-    },
-    {
-      "term": "cocktail party problem"
-    },
-    {
-      "term": "competing speakers"
-    },
-    {
-      "term": "electroencephalography"
-    }
-  ],
-  "source_hash": "3b4c02b1c7f9f323ac6e1ac032950f1bd6eade6ef75c30ac6152c12ce9ac2bba"
+  "source_hash": "8438409315e4593e3fcfd0883a886cc38c8840f57661583e85d1273b891bc588"
 }
