@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004015-blue)](https://doi.org/10.82901/nemar.on004015)
+
 Within this study cEEGrid data from two previous studies were pooled. 
 15 participants from Jaeger et al. (2020) and 21 from Holtze et al. (2021) were included. 
 Participants performed a two-competing speaker paradigm in both original studies. 
