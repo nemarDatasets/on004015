@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Attended speaker paradigm (cEEGrid data)",
-  "description": "This dataset comprises consolidated cEEGrid recordings from two attended speaker paradigm studies involving 36 participants (15 from Jaeger et al. 2020 and 21 from Holtze et al. 2021). Participants performed a dichotic listening task with competing audiobooks while instructed to attend to either the left or right speaker. The pooled dataset includes recordings under omnidirectional and beamforming acoustic conditions, providing a resource for investigating neural correlates of selective auditory attention using high-density EEG.",
-  "methods_description": "Participants performed a two-competing speaker paradigm with 5-6 blocks of 10-minute audiobook presentations. In the omnidirectional condition, both audiobooks were presented at equal loudness. In the beamforming condition, the attended audiobook was presented louder than the ignored audiobook. cEEGrid recordings were acquired during these tasks.",
+  "description": "This dataset pools cEEGrid ear-EEG recordings from two earlier studies, with 15 participants from Jaeger et al. (2020) and 21 from Holtze et al. (2021). Participants performed a two-competing-speaker paradigm in which they attended to either the left or right of two simultaneously presented audio books. Blocks were presented in omnidirectional or beamforming conditions, so the data can be used to study auditory attention decoding to continuous speech with ear-EEG.",
+  "methods_description": "Participants listened to two competing audio books and were instructed to attend to either the left or right one. The paradigm used six 10-minute blocks (Jaeger et al. 2020) or five 10-minute blocks (Holtze et al. 2021). Both audio books were presented equally loud in the omnidirectional condition. In the beamforming condition the to-be-attended book was louder than the to-be-ignored one. The first block was always omnidirectional, and the conditions alternated over the later four blocks, with the starting condition counterbalanced across participants. EEG was recorded with cEEGrid ear-EEG arrays.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,28 +18,29 @@
       "term": "EEG"
     },
     {
-      "term": "selective attention"
+      "term": "cEEGrid"
     },
     {
-      "term": "Auditory Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
+      "term": "ear-EEG"
     },
     {
-      "term": "dichotic listening"
+      "term": "auditory attention"
     },
     {
-      "term": "cocktail party problem"
+      "term": "competing speakers"
     },
     {
-      "term": "high-density EEG"
+      "term": "continuous speech"
+    },
+    {
+      "term": "Attention"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.3389/fnins.2022.869426",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004015",
@@ -47,14 +48,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004015",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004015.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004015",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -62,7 +63,7 @@
     "eeg"
   ],
   "sizes": [
-    "6.5 GB (86 files)"
+    "6.03 GB (86 files)"
   ],
   "formats": [
     ".fdt",
